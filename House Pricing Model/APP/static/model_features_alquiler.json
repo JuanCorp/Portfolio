@@ -1,0 +1,1 @@
+{"Feature": ["construccion", "Solar", "Precio", "numero_banios", "numero_hab", "distrito nacional", "santo domingo este", "santo domingo norte", "santo domingo oeste"], "Type": ["float", "float", "float", "float", "float", "int", "int", "int", "int"]}

@@ -1,0 +1,28 @@
+<head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<h1 id="header">
+Header
+</h1>
+
+<input type="text" id="test_url" value="Www.example.com?utm_source=Google&utm_content=On_Sale" style="width:500px" />
+<button id="sumbit_button">
+     Replace URL
+</button>
+
+<script>
+$("#sumbit_button").click(function(){
+    var header_text = $("#test_url").val()
+    var url_call = "http://ec2-18-216-142-4.us-east-2.compute.amazonaws.com/api?url=" + header_text
+    $.ajax({url: url_call, success: function(result){
+        $("#header").text(result.string)
+    }});
+});</script>
