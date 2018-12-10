@@ -12,4 +12,4 @@ Flask Web application that exposes an ML Model created by scraping local real es
 - Containerization (Docker) 
 - Google Cloud Platform (Kubernetes Engine) 
 
-Try the app: http://35.227.85.182/
+Try the app: http://35.227.85.182/ (offline right now)
